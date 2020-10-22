@@ -23,14 +23,6 @@ mongoose
 .then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log(err));
 
-// const uri = process.env.ATLAS_URI;
-// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
-// );
-// const connection = mongoose.connection;
-// connection.once('open', () => {
-//     console.log("MongoDB database connection established succesfully");
-// })
-
 app.use('/api/items', items);
 
 app.listen(port, () => {
